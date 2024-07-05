@@ -368,4 +368,89 @@ footer button.show {
 }
 
 .buttons button.restart:hover {
-  b
+  background: #0263ca;
+}
+
+.buttons button.quit {
+  color: #007bff;
+  background: #fff;
+}
+
+.buttons button.quit:hover {
+  color: #fff;
+  background: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info_box, .quiz_box, .result_box {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .info_box .info-title,
+  .quiz_box header {
+    padding: 0 20px;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  section .que_text {
+    font-size: 20px;
+  }
+  
+  .start_btn button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  
+  .info_box .buttons button,
+  .result_box .buttons button {
+    width: auto;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info_box, .quiz_box, .result_box {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .info_box .info-title,
+  .quiz_box header {
+    padding: 0 15px;
+  }
+  
+  section {
+    padding: 15px;
+  }
+  
+  section .que_text {
+    font-size: 18px;
+  }
+  
+  section .option_list .option {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .start_btn button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+  
+  .info_box .buttons button,
+  .result_box .buttons button {
+    width: auto;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  
+  .quiz_box header .timer {
+    width: 120px;
+  }
+}
